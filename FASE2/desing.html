@@ -8,29 +8,24 @@
 </head>
 <body>
     <header>
-        <h1>
+        <h1 style= "text-align:center">
             Flex Box, Listas y enlaces
         </h1>
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Temas
+                <li><b>Inicio</b></li>
+                <li><b>Temas</b>
                     <ul>
-                        <li>Etiquetas Básicas de HTML, atributos y valores </li>
-                        <li>Sintaxis y Selectores CSS, Interacción Humano Ordenador </li>
-                        <li>Etiquetas semánticas, CSS Grid </li>
-                        <li>Flex Box, Listas y enlaces </li>
-                        <li>Hojas de Estilo en Cascada CSS, Frameworks CSS </li>
+                        <li>Introducción a Flexbox </li>
+                        <li>Introducción a listas y enlaces</li>
                     </ul>
                 </li>
-                <li>Recusos digitales</li>
-                <li>Aprendizaje
+                <li><b>Recusos digitales</b></li>
                     <ul>
-                       <li>Actividad 1</li> 
-                       <li>Actividad 2</li>
+                       <li>Recurso 1</li> 
+                       <li>Recurso 2</li>
                     </ul>
-                </li>
-                <li>Acerca de:</li>
+                <li><b>Acerca de:</b></li>
             </ul>
         </nav>
         <section>
@@ -46,32 +41,186 @@
             </p>
         </section>
         <article>
-            <h3>
-                Flexbox
-            </h3>
+            <h1 style= "text-align:center">
+                Introducción a Flexbox
+            </h1>
             <p>
-                desarrollo tema 1
-                <img src="img/flexbox.jpg" alt="flexbox">
+                <h2>
+                    <b> Que es Flexbox</b>
+                </h2>
+
+                <b>FLEX</b> es una nuevo atributo de HTML5 correspondiente  a la facilidad de CSS display basado en un contenedor
+                con la propiedad de heredar los atributos a todos los elementos que contenga. Es decir, puedo definir todos los
+                atributos en cuanto diseño, alineación, estilo etc y aplicarlos a todos los elementos dentro del contedor <br>
+
+                <br>Actualmente con FLEXBOX podemos hacer: 
+                <ul>
+                    <li>Ordenar eficientemente el contenido sin tocar el codigo HTML</li> 
+                    <li>Alinear los elementos tanto horizontal como verticalmente</li>
+                    <li>Generar menos codigo y crear diseños mas flexibles</li>
+                 </ul>
+
+            <img src="img/diseño.JPG" alt="flexbox">
+            <br><b>Imagen recuperada de:</b> Camacho, A. (2020). Diseño [Gráfico]. En Flexbox explicado con manzanita (1.a ed., p. 1).
+            Cita en el texto<br>
+            
+            <br>A continuación explicaremos sus partes:
+            <h3><b>contenedor</b></h3>
+            Este es el elemento sobre el que se diseñarán los demas elemntos. se divide en dos grandes ejes:
+            <ul>
+                <li><b>Eje Principal:</b> Los componentes tomarán una orientación sea horizontal (filas) o vertical (columnas) 
+                    segun se requiera, por defecto el valor es <i>Row</i> (Filas) </li> 
+                <li><b>Eje Secundario:</b> Los elementos de ese eje tomarán la posición contraria al eje principal, es decir
+                si el eje princial es <i>Row</i> (Filas) el eje segundario será <i>Column</i> (Columnas)</li>
+             </ul>
+             <h3><b>Item</b></h3>
+             Corresponde a cada uno de los elementos creados dentro del contenedor, se veria de la siguiente manera <br>
+
+             <img src="img/iTEM.JPG" alt="Item">
+
+            <br>Notese que en la etiqueta  <i> Section</i> se encuentra el atributo <i>display</i> el cual funciona volver el contenedor flexible <br>
+             <h3>Dar dirección a los ejes</h3>
+             
+            usaremos la propiedad <i>flex-flow</i> la cual tendrá dos atributos  posibles: <br><br>
+            <b> En el primero</b> definiremos si el eje principal sera una fila o una columna y también el orden de cada uno de los item
+            <ul>
+                <li>ROW  </li> El cual permite alinear hacia en fila un listado de item de derecha a izquierda <br> <img src="img/ROW.JPG" alt="ROW">
+                <li>Row Rever</li>El cual permite alinear hacia en fila un listado de item de izquierda a derecha <br> <img src="img/ROWRJPG.JPG" alt="ROWR">
+                <li>COLUMN</li> Permite crear columnas con item ordenados ascendente <br> <img src="img/COL.JPG" alt="COLUMN">
+                <li>COLUMN-REVERSE</li> Permite crear columnas con item ordenados descendente <br> <img src="img/COLr.JPG" alt="COLUMN">
+             </ul>
+
+             <b> En el Segundo</b> Se establece si el item puede o no desbordarse del limite del contenedor
+
+             <ul>
+                 <li>WRAP</li>NO Permite que el item se desborde del limite <br> <img src="img/WRAP.JPG" alt="WRAP">
+                 <li>NOWRAP</li> SI permite que el item se desborde del limite <br> <img src="img/NOWRAP.JPG" alt="NOWRAP">
+             </ul>
+
+             A modo de ejemplo el codigo quedaria así <br><br>
+            <img src="img/alin.JPG" alt="ALEINAR">
+
             </p>
         </article>
         <article>
-            <h3>
-                Listas
-            </h3>
+            <h1 style= "text-align:center">
+                Introducción a listas y enlaces
+            </h1>
+            <h3>Listas</h3>
             <p>
-                desarrollo tema 1
+                Las listas nos permite presentar información relevante de forma mas ordenada visualmente en nuestra pagina web.
+                Actualmente hay varios tipos de listas entre ellas:
+            <h4>Listas no ordenadas</h4>
+            Se usa cuando el orden de los item no tiene tanta relevancia, por ejemplo, un listado de temas al azar, no necesita de una
+            enumeración para ser listados <br>
+
+            las etiquetas usadas para este tipo de lista son: <br>
+
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;ul&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color: rgb(255, 0, 0);">type</span><span style="color:#800080;">=&quot;circle&quot;</span><span style="color:#0000ff;">&gt;</span>Esto es un tipo de punto.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span> <span style="color:#ff0000;">type</span><span style="color:#800080;">=&quot;square&quot;</span><span style="color:#0000ff;">&gt;</span>Este es otro.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color:#ff0000;">type</span><span style="color:#800080;">=&quot;disc&quot;</span><span style="color:#0000ff;">&gt;</span>Y este es otro diferente.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;/ul&gt;</span></p> <br>
+
+            Las etiquetas &lt;ul&gt; se usan para iniicar  lista, y la etiqueta &lt;li&gt; se usa para agregar viñetas. como vemos hay 3 formas de tipos de viñetas a usar que son las cuadradas, las circulares  y puntos
+
+            <h4>Listas ordenadas</h4>
+            Este tipo de lista se usa para ordernar la información a mostrar. Estas listas usarán numeros de forma ascendente para presntar la información.
+            Por defecto la lista la lista empezará por el numero 1 pero tambien es posible indicar desde que numero queremos que inicie. <br>
+            la estructura a usar es la soguiente: <br>
+
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;ol&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color: rgb(255, 0, 0);">value</span><span style="color:#800080;">=&quot;10&quot;</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el n&uacute;mero 10.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el 11.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el 12. Y as&iacute; sucesivamente.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;/ol&gt;</span></p>
+            
+                Al analizar el código podemos darnos cuenta que se etiqueta &lt;ol&gt;  seguido de etiquetas &lt;li&gt; las cuales indican que enumeraremos los item a listar
+
+            <h4>Listas de deficiones o descripciones </h4>
+                Estas son poco comunes, se usan para listar terminos y queremos dar su definición, por ejemplo: <br>
+                <dl>
+
+                    <dt>HTML5:</dt> 
+                    <dd>Es un lenguaje de programación .</dd>                    
+                </dl>
+                Las etiquetas usadas son &lt;dl&gt; (para llamar la estructura), &lt;dt&gt; (para el temrino) y &lt;dd&gt; (para la definición). El codigo se vería asi: <br>
+
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;dl&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dt&gt;</span>Aqu&iacute; va el t&eacute;rmino que definiremos<span style="color:#0000ff;">&lt;/dt&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dd&gt;</span>Y aqu&iacute; dentro ir&aacute; la definici&oacute;n propiamente dicha.<span style="color:#0000ff;">&lt;/dd&gt;<br />
+                    </span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;/dl&gt;</span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;dl&gt;<br />
+                    </span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dt&gt;</span>Aqu&iacute; va la segunda definici&oacute;n<span style="color:#0000ff;">&lt;/dt&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dd&gt;</span>Segunda definici&oacute;n, separada autom&aacute;ticamente de la anterior.<span style="color:#0000ff;">&lt;/dd&gt;<br />
+                    </span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;/dl&gt;</span></p>
+                <p style="margin-left: 40px;">
+
+             <h3>Enlaces</h3>
+             Los enlaces o LINKS son las referencias que nos permiten trasladarnos a otras paginas tanto de mi blog, como locales e incluso a otras paginas de internet <br>
+             La forma de generar este link es: <br> <br>
+             <b> &lt;A HREF='Link enlace externo'&gt"; Link de prueba" &lt;/A&gt;</b> <br><br>
+             Al ser ejecutado se verá algo como esto: <br><br>
+
+                <A href="Link enlace externo">Link de prueba</A> <br><br>
+
+                <li> En caso de que se requiera direccionar al directorio raiz  donde se encuentra nuestra pagina web podemos usar la ruta: <br><br></li>
+
+                    <dd> <b> &lt;A HREF='../otra_pagina.htm'&gt"; Link directorio raiz" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Para los casos donde se requiere direccionar a un sub directorio del directorio actual se cambia la ruta a: <br><br></li>
+
+                <dd><b> &lt;A HREF='subdirectorio/otra_pagina.htm'&gt"; Link subdirectorio" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Para referenciar paginas HTML que usa un dominio <b> xxx.yyy.zzzz</b> en la ruta / <b> AA/BB/CC/DD/ </b> se usa la siguiente estructura donde se ante pone la sigla HTTP <br><br></li>
+
+            <dd> <b> &lt;A HREF='http://xxx.yyy.zzz/AA/BB/CC/DD/pagina.html'&gt"; Link AA/BB/CC/DD/" &lt;/A&gt;</b> <br><br></dd>
+
+            <li>Si queremos referenciar archivos de FTP anteponemos la sigla <B>FTP</B> a la ruta <br><br></li>
+            <dd> <b> &lt;A HREF='ftp://xxx.yyy.zzz/AA/BB/CC/DD/pagina.html'&gt"; Link FTP" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Si requerimos direccionar a una sección de nuestra pagina actual debemos darle un nombre a la sección requerida y en el enlace pondremos <br><br></li>
+                <dd> <b> &lt;A HREF='pagina.html#nombreseccion'&gt"; Link seccion pagina" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Si generar un link que envie un correo electrónico podemos anteponer la palabra "mailto:" de la siguiente forma <br><br></li>
+                <dd> <b> &lt;A HREF='mailto:correi@mi.direccion.de.email'&gt"; Enviar un E- MAIL" &lt;/A&gt;</b> <br><br> </dd>
             </p>
         </article>
-        <article>
-            <h3>
-                Enlaces
-            </h3>
-            <p>
-                desarrollo tema 1
-            </p>
-        </article>
-        <h4>Mi mockup</h4>
-        <img src="" alt="colocar mi mockup">
+
+        <h1 style= "text-align:center">
+            Mi mockup
+        </h1>
+        <div align="center"> <img src="img/MOKUP.JPG" alt="Mi mockup" > </div>
+
+        <h1 style= "text-align:center">
+            Bibliografía
+        </h1>
+        <ul>
+            <li>González, E. (2006). Cómo obtener claves o contraseñas de redes wifi (cracking «a por naranjas») ¿Es segura una red inalámbrica? Listas HTML. Listas no ordenadas ul, ordenadas ol, de definiciones. Tag li. Etiquetas dl, dt, dd (CU00718B). https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=514:listas-html-listas-no-ordenadas-ul-ordenadas-ol-de-definiciones-tag-li-etiquetas-dl-dt-dd-cu00718b&catid=69&Itemid=192</li>
+            <li>A. (2020, 28 julio). Flexbox explicado con manzanitas 🍎🍏. Platzi. https://platzi.com/blog/flexbox-explicado-con-manzanitas/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAjw8sCRBhA6EiwA6_IF4WI6SY3ZkBnH8WEf-rLJ--jXAAy-TC_E3iQtM3X-qFASLS7pc0ZfmRoC1eAQAvD_BwE&gclsrc=aw.ds</li>
+            <li>Links en HTML. (2020). Links en HTML. https://users.dcc.uchile.cl/%7Eahevia/html/links.html</li>
+        </ul>
         <footer>
             <h5>Autor:</h5>
             <ul>
