@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 </title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head> 
+<body>
+    <header class ="centrado" >
+        <img loading="lazy" src="https://datateca.unad.edu.co/contenidos/publicaciones/Comunicaciones_VIMEP/2021/cursos/img/logoUNAD-HD.webp" 
+        alt="Plataforma Accesit" data-uw-rm-ima-original="plataforma accesit" 
+        data-uw-styling-context="true" height =" 150px " width =" 100%" >
+<br><br>
+        <h1>Flex Box, Listas y enlaces</h1>
+ <br>
+    </header>
+    <nav>
+        <ul class="menu" >
+            <li><a href="INDEX.HTML"> Inicio</a></li>
+            <li><a>Temas</a>
+                <ul>
+                    <li><a href="Tema1.html">Introducción a Flexbox </a></li>
+                    <li><a href="Tema2.html">Introducción a listas y enlaces</a></li>
+                </ul>
+             </li>
+            <li><a>Recusos digitales</a>
+                <ul>
+                    <li><a href="recursoFlexbox.html">Recurso Flexbox</a></li> 
+                    <li><a href="recursoLista.html" > Recurso Listas y enlaces</a></li>
+                </ul>
+            </li>
+            <li><a>Aprendizaje</a>
+                <ul>
+                    <li><a href="AprendizajeFlex.html">Aprendizaje Flexbox</a></li> 
+                    <li><a href="AprendizajeLista.html"> Aprendizaje Listas y enlaces</a></li>
+                </ul>
+            </li>
+            <li><a href="perfil.html">Perfil:</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+        <article>
+           
+            <h1 style= "text-align:center">
+                Introducción a listas y enlaces
+            </h1>
+            <h3>Listas</h3>
+            <p>
+                Las listas nos permite presentar información relevante de forma mas ordenada visualmente en nuestra pagina web.
+                Actualmente hay varios tipos de listas entre ellas:
+            <h4>Listas no ordenadas</h4>
+            Se usa cuando el orden de los item no tiene tanta relevancia, por ejemplo, un listado de temas al azar, no necesita de una
+            enumeración para ser listados <br>
+
+            las etiquetas usadas para este tipo de lista son: <br>
+
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;ul&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color: rgb(255, 0, 0);">type</span><span style="color:#800080;">=&quot;circle&quot;</span><span style="color:#0000ff;">&gt;</span>Esto es un tipo de punto.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span> <span style="color:#ff0000;">type</span><span style="color:#800080;">=&quot;square&quot;</span><span style="color:#0000ff;">&gt;</span>Este es otro.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color:#ff0000;">type</span><span style="color:#800080;">=&quot;disc&quot;</span><span style="color:#0000ff;">&gt;</span>Y este es otro diferente.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;/ul&gt;</span></p> <br>
+
+            Las etiquetas &lt;ul&gt; se usan para iniicar  lista, y la etiqueta &lt;li&gt; se usa para agregar viñetas. como vemos hay 3 formas de tipos de viñetas a usar que son las cuadradas, las circulares  y puntos
+
+            <h4>Listas ordenadas</h4>
+            Este tipo de lista se usa para ordernar la información a mostrar. Estas listas usarán numeros de forma ascendente para presntar la información.
+            Por defecto la lista la lista empezará por el numero 1 pero tambien es posible indicar desde que numero queremos que inicie. <br>
+            la estructura a usar es la soguiente: <br>
+
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;ol&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li </span><span style="color: rgb(255, 0, 0);">value</span><span style="color:#800080;">=&quot;10&quot;</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el n&uacute;mero 10.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el 11.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 120px;">
+                <span style="color:#0000ff;">&lt;li</span><span style="color:#0000ff;">&gt;</span>Este ser&aacute; el 12. Y as&iacute; sucesivamente.<span style="color:#0000ff;">&lt;/li&gt;</span></p>
+            <p style="margin-left: 80px;">
+                <span style="color:#0000ff;">&lt;/ol&gt;</span></p>
+            
+                Al analizar el código podemos darnos cuenta que se etiqueta &lt;ol&gt;  seguido de etiquetas &lt;li&gt; las cuales indican que enumeraremos los item a listar
+
+            <h4>Listas de deficiones o descripciones </h4>
+                Estas son poco comunes, se usan para listar terminos y queremos dar su definición, por ejemplo: <br>
+                <dl>
+
+                    <dt>HTML5:</dt> 
+                    <dd>Es un lenguaje de programación .</dd>                    
+                </dl>
+                Las etiquetas usadas son &lt;dl&gt; (para llamar la estructura), &lt;dt&gt; (para el temrino) y &lt;dd&gt; (para la definición). El codigo se vería asi: <br>
+
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;dl&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dt&gt;</span>Aqu&iacute; va el t&eacute;rmino que definiremos<span style="color:#0000ff;">&lt;/dt&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dd&gt;</span>Y aqu&iacute; dentro ir&aacute; la definici&oacute;n propiamente dicha.<span style="color:#0000ff;">&lt;/dd&gt;<br />
+                    </span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;/dl&gt;</span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;dl&gt;<br />
+                    </span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dt&gt;</span>Aqu&iacute; va la segunda definici&oacute;n<span style="color:#0000ff;">&lt;/dt&gt;</span></p>
+                <p style="margin-left: 120px;">
+                    <span style="color:#0000ff;">&lt;dd&gt;</span>Segunda definici&oacute;n, separada autom&aacute;ticamente de la anterior.<span style="color:#0000ff;">&lt;/dd&gt;<br />
+                    </span></p>
+                <p style="margin-left: 80px;">
+                    <span style="color:#0000ff;">&lt;/dl&gt;</span></p>
+                <p style="margin-left: 40px;">
+
+             <h3>Enlaces</h3>
+             Los enlaces o LINKS son las referencias que nos permiten trasladarnos a otras paginas tanto de mi blog, como locales e incluso a otras paginas de internet <br>
+             La forma de generar este link es: <br> <br>
+             <b> &lt;A HREF='Link enlace externo'&gt"; Link de prueba" &lt;/A&gt;</b> <br><br>
+             Al ser ejecutado se verá algo como esto: <br><br>
+
+                <A href="Link enlace externo">Link de prueba</A> <br><br>
+
+                <li> En caso de que se requiera direccionar al directorio raiz  donde se encuentra nuestra pagina web podemos usar la ruta: <br><br></li>
+
+                    <dd> <b> &lt;A HREF='../otra_pagina.htm'&gt"; Link directorio raiz" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Para los casos donde se requiere direccionar a un sub directorio del directorio actual se cambia la ruta a: <br><br></li>
+
+                <dd><b> &lt;A HREF='subdirectorio/otra_pagina.htm'&gt"; Link subdirectorio" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Para referenciar paginas HTML que usa un dominio <b> xxx.yyy.zzzz</b> en la ruta / <b> AA/BB/CC/DD/ </b> se usa la siguiente estructura donde se ante pone la sigla HTTP <br><br></li>
+
+            <dd> <b> &lt;A HREF='http://xxx.yyy.zzz/AA/BB/CC/DD/pagina.html'&gt"; Link AA/BB/CC/DD/" &lt;/A&gt;</b> <br><br></dd>
+
+            <li>Si queremos referenciar archivos de FTP anteponemos la sigla <B>FTP</B> a la ruta <br><br></li>
+            <dd> <b> &lt;A HREF='ftp://xxx.yyy.zzz/AA/BB/CC/DD/pagina.html'&gt"; Link FTP" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Si requerimos direccionar a una sección de nuestra pagina actual debemos darle un nombre a la sección requerida y en el enlace pondremos <br><br></li>
+                <dd> <b> &lt;A HREF='pagina.html#nombreseccion'&gt"; Link seccion pagina" &lt;/A&gt;</b> <br><br> </dd>
+
+            <li>Si generar un link que envie un correo electrónico podemos anteponer la palabra "mailto:" de la siguiente forma <br><br></li>
+                <dd> <b> &lt;A HREF='mailto:correi@mi.direccion.de.email'&gt"; Enviar un E- MAIL" &lt;/A&gt;</b> <br><br> </dd>
+            </p>
+        </article>
+        
+        <div>
+            <article>
+        <h1 style= "text-align:center">
+            Bibliografía
+        </h1>
+        
+        <li>González, E. (2006). Cómo obtener claves o contraseñas de redes wifi (cracking «a por naranjas») ¿Es segura una red inalámbrica? Listas HTML. Listas no ordenadas ul, ordenadas ol, de definiciones. Tag li. Etiquetas dl, dt, dd (CU00718B). https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=514:listas-html-listas-no-ordenadas-ul-ordenadas-ol-de-definiciones-tag-li-etiquetas-dl-dt-dd-cu00718b&catid=69&Itemid=192</li>
+        <li>A. (2020, 28 julio). Flexbox explicado con manzanitas 🍎🍏. Platzi. https://platzi.com/blog/flexbox-explicado-con-manzanitas/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAjw8sCRBhA6EiwA6_IF4WI6SY3ZkBnH8WEf-rLJ--jXAAy-TC_E3iQtM3X-qFASLS7pc0ZfmRoC1eAQAvD_BwE&gclsrc=aw.ds</li>
+        <li>Links en HTML. (2020). Links en HTML. https://users.dcc.uchile.cl/%7Eahevia/html/links.html</li>
+    </article>
+    </div>
+</div>   
+        <aside>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside> 
+    </section>
+</body>
+</html>
+
+        </aside>
+    </section>
+  
+        <footer>
+            <h5>Autor:</h5>
+            <ul>
+                <li>Roger Steve Diaz Leguizamon</li>
+                <li><b>Correo:</b> rogerstiven_93@hotmail.com</li>
+                <li><b>Skype:</b> rogerstiven_93@hotmail.com</li>
+            </ul>
+        </footer>
+    </header>
+</body>
+</html> 
